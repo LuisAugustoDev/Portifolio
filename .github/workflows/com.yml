@@ -3,7 +3,7 @@ name: Deploy Static Site
 on:
   push:
     branches:
-      - main  # ou a branch que você usa para deploy
+      - main  # ou a branch que você está usando para deploy
 
 jobs:
   deploy:
@@ -17,4 +17,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Aponte para o diretório onde seus arquivos HTML, CSS, JS estão
+          publish_dir: ./  # Diretório onde estão seus arquivos HTML/CSS/JS
